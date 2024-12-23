@@ -1,0 +1,25 @@
+-- *Pembagian Hak User Login* -- (Tutorial 23)
+
+1 Admin           = Mengelola Akun & Data Barang
+2 Operator Barang = Mengelola Data Barang
+3 User            = Melihat Tentang, Galeri, Daftar Barang
+
+jika Admin login > Data Akun
+jika Operator Barang Login > Produk
+jika User login > Tentang
+
+-- *Batasan Hak User Login* --
+
+Admin
+ - tidak ada batasan
+
+Operator Barang
+ - logika jika Operator Barang > Data Barang (sudah)
+ - logika jika Operator Barang akses url ke Akun harusnya tidak bisa (sudah)
+ - logika jika Operator Barang semua menu ada kecuali Akun (sudah)
+
+User
+ - logika jika User login > Tentang (sudah)
+ - logika jika User akses url ke Utama & Akun harusnya tidak bisa (sudah)
+ - logika jika User menu hanya ada Tentang, Galeri & Daftar Barang (sudah)
+ - logika jika User pada tabel produk (barang) semua button hilang
